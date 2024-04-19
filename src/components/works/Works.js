@@ -5,19 +5,17 @@ import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 
-import './Works.css';
+import "./Works.css";
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
-
+import MealSharing from "../../assets/recentprojects/mealsharing.png";
+import Checkin from "../../assets/recentprojects/checkin.png";
+import Portfolio from "../../assets/recentprojects/portfoliopage.png";
+import CurrencyExchange from "../../assets/recentprojects/currencyexchange.png";
 const useStyles = makeStyles((theme) => ({
   main: {
-    maxWidth: '100vw',
-    marginTop: '3em',
+    maxWidth: "100vw",
+    marginTop: "3em",
     marginBottom: "auto",
   },
 }));
@@ -25,48 +23,35 @@ const useStyles = makeStyles((theme) => ({
 export const Works = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([
-    { 
+    {
       id: 1,
-      title: 'React Portfolio', 
+      title: "Check-in Project",
+      description: `Project Check-in is a web application designed to facilitate asynchronous updates within remote or distributed teams, replacing traditional daily stand-up meetings. This tool allows team members to provide updates at their convenience, enhancing collaboration across different locations.`,
+      alter: "Check-in Project",
+      image: `${Checkin}`,
+    },
+    {
+      id: 2,
+      title: "Portfolio",
       description: `Designed and developed a ReactJS portfolio 
       with fancy 3D animations using Three.js for 
       the background element.`,
-      alter: 'React Portfolio',
+      alter: "React Portfolio",
       image: `${Portfolio}`,
     },
-    { 
-      id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
-    },
-    { 
+    {
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
+      title: "Meal Sharing",
+      description: `The Meal Sharing App is a full-stack web application created as an individual project for Hack Your Future Denmark. It enables users to explore, reserve, and share meals using modern frontend and backend technologies, offering a seamless user interaction experience.`,
+      alter: "Meal Sharing App",
+      image: `${MealSharing}`,
     },
-    { 
+    {
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
-    },
-    { 
-      id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
+      title: "Currency Exchange",
+      description: `A currency exchange app allows users to convert the value of one currency into another based on real-time or recent exchange rates. Such apps are particularly useful for travelers, forex traders, or anyone needing to conduct financial transactions in different currencies.`,
+      alter: "Currency exchange",
+      image: `${CurrencyExchange}`,
     },
   ]);
 
@@ -74,17 +59,15 @@ export const Works = () => {
     <section id="works">
       <Container component="main" className={classes.main} maxWidth="md">
         {projects.map((project) => (
-          <div className="project" key={ project.id }>
+          <div className="project" key={project.id}>
             <div className="__img_wrapper">
-              <img src={ project.image } alt={ project.alter }/>
+              <img src={project.image} alt={project.alter} />
             </div>
             <div className="__content_wrapper">
               <h3 className="title">
-                <TextDecrypt text={ project.id + '. ' + project.title } />
+                <TextDecrypt text={project.id + ". " + project.title} />
               </h3>
-              <p className="description">
-                { project.description }
-              </p>
+              <p className="description">{project.description}</p>
             </div>
           </div>
         ))}

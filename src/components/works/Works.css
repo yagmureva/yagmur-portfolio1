@@ -18,7 +18,11 @@
   width: 60em;
 }
 .__img_wrapper > img {
-  width: 100%;
+  width: 50%;
+  height: auto; /* To maintain the aspect ratio */
+  object-fit: cover; /* To cover the area of the box, can be changed to 'contain' if you don't want the images to be cropped */
+  border-radius: 16px; /* This will make the image corners match the content wrapper's corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .__content_wrapper {
   width: 40%;
