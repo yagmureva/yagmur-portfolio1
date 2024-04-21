@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { useState } from "react";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
-
 import "./Works.css";
 
-// Import ../../assets/recentprojects/
+// Import assets
 import MealSharing from "../../assets/recentprojects/mealsharing.png";
 import Checkin from "../../assets/recentprojects/checkin.png";
 import Portfolio from "../../assets/recentprojects/portfoliopage.png";
 import CurrencyExchange from "../../assets/recentprojects/currencyexchange.png";
+
 const useStyles = makeStyles((theme) => ({
   main: {
     maxWidth: "100vw",
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Works = () => {
   const classes = useStyles();
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       id: 1,
       title: "Check-in Project",
@@ -33,23 +32,21 @@ export const Works = () => {
     {
       id: 2,
       title: "Portfolio",
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
+      description: `Designed and developed a ReactJS portfolio with fancy 3D animations using Three.js for the background element. Here is my project <a href="https://yagmur-portfolio1.vercel.app/" target="_blank" rel="noopener noreferrer">yagmur-portfolio1.vercel.app</a>`,
       alter: "React Portfolio",
       image: `${Portfolio}`,
     },
     {
       id: 3,
       title: "Meal Sharing",
-      description: `The Meal Sharing App is a full-stack web application created as an individual project for Hack Your Future Denmark. It enables users to explore, reserve, and share meals using modern frontend and backend technologies, offering a seamless user interaction experience.`,
+      description: `The Meal Sharing App is a full-stack web application created as an individual project for Hack Your Future Denmark. It enables users to explore, reserve, and share meals using modern frontend and backend technologies, offering a seamless user interaction experience. <a href="https://github.com/yagmureva/meal-sharing" target="_blank" rel="noopener noreferrer">meal-sharing.yagmureva.github</a>`,
       alter: "Meal Sharing App",
       image: `${MealSharing}`,
     },
     {
       id: 4,
       title: "Currency Exchange",
-      description: `A currency exchange app allows users to convert the value of one currency into another based on real-time or recent exchange rates. Such apps are particularly useful for travelers, forex traders, or anyone needing to conduct financial transactions in different currencies.`,
+      description: `A currency exchange app allows users to convert the value of one currency into another based on real-time or recent exchange rates. Such apps are particularly useful for travelers, forex traders, or anyone needing to conduct financial transactions in different currencies. Here is my project <a href="https://currency-exchange-pearl.vercel.app/" target="_blank" rel="noopener noreferrer">currency-exchange.vercel.app</a>`,
       alter: "Currency exchange",
       image: `${CurrencyExchange}`,
     },
@@ -67,7 +64,10 @@ export const Works = () => {
               <h3 className="title">
                 <TextDecrypt text={project.id + ". " + project.title} />
               </h3>
-              <p className="description">{project.description}</p>
+              <p
+                className="description"
+                dangerouslySetInnerHTML={{ __html: project.description }}
+              ></p>
             </div>
           </div>
         ))}
