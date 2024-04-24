@@ -1,23 +1,22 @@
-.project {
-  width: 80%;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+.project,
 .project-reverse {
   width: 80%;
   margin-left: 7rem;
   margin-right: 7rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row; /* default direction */
 }
+
+.project-reverse {
+  flex-direction: row-reverse; /* reverse the order for this class */
+}
+
 .__img_wrapper {
-  width: 60em;
+  width: 60em; /* Adjust as needed or use responsive units like % */
   margin-left: 10em;
 }
+
 .__img_wrapper > img {
   width: 50%;
   height: auto; /* To maintain the aspect ratio */
@@ -25,6 +24,7 @@
   border-radius: 16px; /* This will make the image corners match the content wrapper's corners */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
 .__content_wrapper {
   width: 40%;
   justify-content: center;
@@ -34,33 +34,50 @@
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
 .title {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.description {
-  font-size: 1rem;
   width: 60%;
 }
+
+/* Text overflow with ellipsis */
+.__content_wrapper .text-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* limits the text to 3 lines */
+}
+
+/* Responsive adjustments */
 @media (max-width: 1024px) {
-  .project {
+  .project,
+  .project-reverse {
     margin-left: 3rem;
     margin-right: 3rem;
-  }
-  .__content_wrapper {
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
-  .project {
-    margin-left: 4em;
-    margin-right: 4em;
     flex-direction: column;
   }
+
   .__img_wrapper {
-    width: 340px;
+    width: 100%; /* full width */
+    margin-left: 0;
+  }
+
+  .__content_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project,
+  .project-reverse {
+    margin: 4em; /* unified margins */
+    flex-direction: column; /* stack vertically on smaller screens */
+  }
+  .__img_wrapper {
+    width: 100%; /* full width for smaller containers */
+    margin-left: 0; /* reset margin */
   }
   .__content_wrapper {
-    width: 70%;
+    width: 100%; /* make content wrapper full width */
   }
 }
