@@ -16,6 +16,7 @@
 }
 .__img_wrapper {
   width: 60em;
+  margin-left: 10em;
 }
 .__img_wrapper > img {
   width: 50%;
@@ -32,7 +33,6 @@
   flex-direction: column;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.51);
 }
 .title {
   font-size: 1.5rem;

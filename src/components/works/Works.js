@@ -25,7 +25,7 @@ export const Works = () => {
     {
       id: 1,
       title: "Check-in Project",
-      description: `Project Check-in is a web application designed to facilitate asynchronous updates within remote or distributed teams, replacing traditional daily stand-up meetings. This tool allows team members to provide updates at their convenience, enhancing collaboration across different locations. This is the final project I prepared with my teammates at HackYourFuture Denmark. <a href="https://github.com/yagmureva/team26-checkin" target="_blank" rel="noopener noreferrer">check-in-app</a>`,
+      description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. <a href="https://github.com/yagmureva/team26-checkin" target="_blank" rel="noopener noreferrer">check-in-app</a>`,
       alter: "Check-in Project",
       image: `${Checkin}`,
     },
@@ -39,14 +39,15 @@ export const Works = () => {
     {
       id: 3,
       title: "Meal Sharing",
-      description: `The Meal Sharing App is a full-stack web application created as an individual project for Hack Your Future Denmark. It enables users to explore, reserve, and share meals using modern frontend and backend technologies, offering a seamless user interaction experience. <a href="https://github.com/yagmureva/meal-sharing" target="_blank" rel="noopener noreferrer">meal-sharing.yagmureva.github</a>`,
+      description: `
+The Meal Sharing App, developed for Hack Your Future Denmark, is a full-stack web application. It lets users explore, reserve, and share meals with a seamless user experience. <a href="https://github.com/yagmureva/meal-sharing" target="_blank" rel="noopener noreferrer">meal-sharing.yagmureva.github</a>`,
       alter: "Meal Sharing App",
       image: `${MealSharing}`,
     },
     {
       id: 4,
       title: "Currency Exchange",
-      description: `A currency exchange app allows users to convert the value of one currency into another based on real-time or recent exchange rates. Such apps are particularly useful for travelers, forex traders, or anyone needing to conduct financial transactions in different currencies. Here is my project <a href="https://currency-exchange-pearl.vercel.app/" target="_blank" rel="noopener noreferrer">currency-exchange.vercel.app</a>`,
+      description: `A currency exchange app lets users convert one currency into another using real-time exchange rates. It's handy for travelers, forex traders, or anyone dealing with multiple currencies. Here's my project. <a href="https://currency-exchange-pearl.vercel.app/" target="_blank" rel="noopener noreferrer">currency-exchange.vercel.app</a>`,
       alter: "Currency exchange",
       image: `${CurrencyExchange}`,
     },
