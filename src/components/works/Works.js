@@ -25,7 +25,7 @@ export const Works = () => {
     {
       id: 1,
       title: "Check-in Project",
-      description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. <a href="https://github.com/yagmureva/team26-checkin" target="_blank" rel="noopener noreferrer">check-in-app</a>`,
+      description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. <a href="https://github.com/yagmureva/checkin-project" target="_blank" rel="noopener noreferrer">check-in-app</a>`,
       alter: "Check-in Project",
       image: `${Checkin}`,
     },
