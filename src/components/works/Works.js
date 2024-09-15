@@ -6,7 +6,7 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import "./Works.css";
 
 // Import assets
-import MealSharing from "../../assets/recentprojects/mealsharing.png";
+import TeachersDashboard from "../../assets/recentprojects/teachers.png";
 import Checkin from "../../assets/recentprojects/checkin.png";
 import Portfolio from "../../assets/recentprojects/portfoliopage.png";
 import CurrencyExchange from "../../assets/recentprojects/currencyexchange.png";
@@ -24,6 +24,14 @@ export const Works = () => {
   const [projects] = useState([
     {
       id: 1,
+      title: "Planet Peanut-Teachers Dashboard",
+      description: `
+Teachers Dashboard is a web-based application developed for Planet Peanut company to assist teachers in managing their classrooms. It allows them to track student progress, manage assignments, and view analytics <a href="https://www.loom.com/share/64812c1110954b1e9b0ddd319802a88e?sid=488c1621-fca4-46c5-9095-e6010bf39ca6" target="_blank" rel="noopener noreferrer">Teachers Dashboard</a>`,
+      alter: "Teachers Dashboard",
+      image: `${TeachersDashboard}`,
+    },
+    {
+      id: 2,
       title: "Check-in Project",
       description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. Watch the walkthroughs here: 
       <a href="https://www.loom.com/share/9ff0e4cafee04f7fb3efb0c081efbcbf?sid=b88053af-edd4-40e9-9fc7-b5181b55631d" target="_blank" rel="noopener noreferrer">Demo 1</a>, 
@@ -33,19 +41,11 @@ export const Works = () => {
       image: `${Checkin}`,
     },
     {
-      id: 2,
+      id: 3,
       title: "Portfolio",
       description: `Designed and developed a ReactJS portfolio with fancy 3D animations using Three.js for the background element. Here is my project <a href="https://yagmur-portfolio1.vercel.app/" target="_blank" rel="noopener noreferrer">yagmur-portfolio1.vercel.app</a>`,
       alter: "React Portfolio",
       image: `${Portfolio}`,
-    },
-    {
-      id: 3,
-      title: "Meal Sharing",
-      description: `
-The Meal Sharing App, developed for Hack Your Future Denmark, is a full-stack web application. It lets users explore, reserve, and share meals with a seamless user experience. <a href="https://github.com/yagmureva/meal-sharing" target="_blank" rel="noopener noreferrer">meal-sharing.yagmureva.github</a>`,
-      alter: "Meal Sharing App",
-      image: `${MealSharing}`,
     },
     {
       id: 4,
