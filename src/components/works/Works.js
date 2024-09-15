@@ -26,11 +26,9 @@ export const Works = () => {
       id: 1,
       title: "Check-in Project",
       description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. Watch the walkthroughs here: 
-      <ul>
-        <li><a href="https://www.loom.com/share/9ff0e4cafee04f7fb3efb0c081efbcbf?sid=b88053af-edd4-40e9-9fc7-b5181b55631d" target="_blank" rel="noopener noreferrer">Loom Video 1</a></li>
-        <li><a href="https://www.loom.com/share/0030642bcdbe4ca8ad3d96f088f98017?sid=be56af72-92d4-4cac-bf97-157daedafab4" target="_blank" rel="noopener noreferrer">Loom Video 2</a></li>
-        <li><a href="https://www.loom.com/share/c0c6c5afa02b46b8bd33f28463c7be8a?sid=8490c993-703e-4276-8cc0-1d8e70241e76" target="_blank" rel="noopener noreferrer">Loom Video 3</a></li>
-      </ul>`,
+      <a href="https://www.loom.com/share/9ff0e4cafee04f7fb3efb0c081efbcbf?sid=b88053af-edd4-40e9-9fc7-b5181b55631d" target="_blank" rel="noopener noreferrer">Demo 1</a>, 
+      <a href="https://www.loom.com/share/0030642bcdbe4ca8ad3d96f088f98017?sid=be56af72-92d4-4cac-bf97-157daedafab4" target="_blank" rel="noopener noreferrer">Demo 2</a>, 
+      <a href="https://www.loom.com/share/c0c6c5afa02b46b8bd33f28463c7be8a?sid=8490c993-703e-4276-8cc0-1d8e70241e76" target="_blank" rel="noopener noreferrer">Demo 3</a>`,
       alter: "Check-in Project",
       image: `${Checkin}`,
     },
