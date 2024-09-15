@@ -25,7 +25,7 @@ export const Works = () => {
     {
       id: 1,
       title: "Check-in Project",
-      description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. <a href="https://github.com/yagmureva/checkin-project" target="_blank" rel="noopener noreferrer">check-in-app</a>`,
+      description: `Project Check-in is a web app for remote team updates, replacing daily stand-ups. Facilitates asynchronous communication, enhancing collaboration in distributed teams. Created with teammates at HackYourFuture Denmark. <a href="https://private-user-images.githubusercontent.com/127700012/326255741-9e2703b3-d2e2-4ca1-b97e-35ec36311de1.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY0MjY2OTUsIm5iZiI6MTcyNjQyNjM5NSwicGF0aCI6Ii8xMjc3MDAwMTIvMzI2MjU1NzQxLTllMjcwM2IzLWQyZTItNGNhMS1iOTdlLTM1ZWMzNjMxMWRlMS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwOTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDkxNVQxODUzMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YjllYTIxZDE1NzlhM2Q4MjM3NGE1YjI4YjdkZmRlMjE4ZTgzYmE2NzhiMzViMDU2MjhhZjY4ZWViOTg4ZTU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IWnpmrPfZzmHxKpZcmmRMLYpfgMt_O2PBkUFwLq9BQI" target="_blank" rel="noopener noreferrer">check-in-app</a>`,
       alter: "Check-in Project",
       image: `${Checkin}`,
     },
