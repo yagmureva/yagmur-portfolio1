@@ -9,7 +9,7 @@ import "./Works.css";
 import TeachersDashboard from "../../assets/recentprojects/teachers.png";
 import Checkin from "../../assets/recentprojects/checkin.png";
 import Portfolio from "../../assets/recentprojects/portfoliopage.png";
-import CurrencyExchange from "../../assets/recentprojects/currencyexchange.png";
+import Space from "../../assets/recentprojects/space.png";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -49,10 +49,10 @@ Teachers Dashboard is a web-based application developed for Planet Peanut compan
     },
     {
       id: 4,
-      title: "Currency Exchange",
-      description: `A currency exchange app lets users convert one currency into another using real-time exchange rates. It's handy for travelers, forex traders, or anyone dealing with multiple currencies. Here's my project. <a href="https://currency-exchange-pearl.vercel.app/" target="_blank" rel="noopener noreferrer">currency-exchange.vercel.app</a>`,
-      alter: "Currency exchange",
-      image: `${CurrencyExchange}`,
+      title: "Face to space",
+      description: `Face The Space is a dynamic and visually engaging space exploration website built using modern web development technologies. The project showcases an interactive user interface designed to captivate users and immerse them in a virtual journey to space. <a href="https://face-the-space.vercel.app/#/technology" target="_blank" rel="noopener noreferrer">face-to-space.vercel.app</a>`,
+      alter: "Space",
+      image: `${Space}`,
     },
   ]);
 
