@@ -21,7 +21,6 @@ You can access the live deployment of the application directly at [Yagmur's Port
 
 
 
-
 ## Technologies Used
 
 ### Frontend:
