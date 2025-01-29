@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Link } from "@material-ui/core";
 import { TextDecrypt } from "../content/TextDecrypt";
-import ResumePDF from "./../../assets/YagmurNielsenResume.pdf";
+//import ResumePDF from "./../../assets/YagmurNielsenResume.pdf";
 import { ResumeIcon } from "../content/ResumeButton";
 
 const useStyles = makeStyles((theme) => ({
